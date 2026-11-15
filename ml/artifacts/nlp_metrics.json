@@ -1,0 +1,67 @@
+{
+  "headlines": 36,
+  "ner_engine": "spacy+gazetteer",
+  "entity_micro": {
+    "precision": 1.0,
+    "recall": 0.9841,
+    "f1": 0.992,
+    "tp": 62,
+    "fp": 0,
+    "fn": 1
+  },
+  "entity_ports": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 17,
+    "fp": 0,
+    "fn": 0
+  },
+  "entity_countries": {
+    "precision": 1.0,
+    "recall": 0.9545,
+    "f1": 0.9767,
+    "tp": 21,
+    "fp": 0,
+    "fn": 1
+  },
+  "entity_industries": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 24,
+    "fp": 0,
+    "fn": 0
+  },
+  "event_accuracy": 0.9167,
+  "recovery_accuracy": 0.9722,
+  "headlines_with_seeds": 1.0,
+  "errors": [
+    {
+      "id": 1,
+      "field": "countries",
+      "pred": [],
+      "gold": [
+        "Netherlands"
+      ]
+    },
+    {
+      "id": 11,
+      "field": "event",
+      "pred": "shortage",
+      "gold": "closure"
+    },
+    {
+      "id": 14,
+      "field": "event",
+      "pred": "shortage",
+      "gold": "power_outage"
+    },
+    {
+      "id": 32,
+      "field": "event",
+      "pred": "general_disruption",
+      "gold": "natural_disaster"
+    }
+  ]
+}

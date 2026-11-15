@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "label_noise": 0.05,
+    "epochs": 25,
+    "train_samples": 1000,
+    "val_samples": 160,
+    "test_samples": 300,
+    "deploy_samples": 150,
+    "train_networks": 40,
+    "test_networks": 10,
+    "training_seconds": 788.9,
+    "parameters": 135875
+  },
+  "results": {
+    "test_unseen_networks": {
+      "seeds_only_baseline": {
+        "delay_mae_all_nodes": 0.1614,
+        "delay_mae_affected": 2.695,
+        "delay_rmse_affected": 4.336,
+        "delay_r2_in_scope": 0.66,
+        "affected_precision": 1.0,
+        "affected_recall": 0.4771,
+        "affected_f1": 0.646,
+        "arrival_mae_days": 0.0,
+        "risk_mae": 0.0118,
+        "mae_affected_by_stage": {
+          "tier2": 0.523,
+          "tier1": 2.794,
+          "manufacturer": 2.99,
+          "port": 7.268,
+          "distributor": 7.499
+        },
+        "nodes_evaluated": 178830,
+        "true_affected_nodes": 10711
+      },
+      "hop_decay_heuristic": {
+        "delay_mae_all_nodes": 0.439,
+        "delay_mae_affected": 3.078,
+        "delay_rmse_affected": 4.317,
+        "delay_r2_in_scope": 0.5724,
+        "affected_precision": 0.5161,
+        "affected_recall": 1.0,
+        "affected_f1": 0.6808,
+        "arrival_mae_days": 0.077,
+        "risk_mae": 0.0144,
+        "mae_affected_by_stage": {
+          "tier2": 0.523,
+          "tier1": 3.572,
+          "manufacturer": 6.029,
+          "port": 2.954,
+          "distributor": 3.44
+        },
+        "nodes_evaluated": 178830,
+        "true_affected_nodes": 10711
+      },
+      "mlp_no_graph": {
+        "delay_mae_all_nodes": 0.2157,
+        "delay_mae_affected": 2.801,
+        "delay_rmse_affected": 4.113,
+        "delay_r2_in_scope": 0.7714,
+        "affected_precision": 0.5858,
+        "affected_recall": 0.5873,
+        "affected_f1": 0.5866,
+        "arrival_mae_days": 1.259,
+        "risk_mae": 0.0272,
+        "mae_affected_by_stage": {
+          "tier2": 1.111,
+          "tier1": 2.999,
+          "manufacturer": 3.118,
+          "port": 6.175,
+          "distributor": 5.181
+        },
+        "nodes_evaluated": 178830,
+        "true_affected_nodes": 10711
+      },
+      "ripple_gnn": {
+        "delay_mae_all_nodes": 0.0314,
+        "delay_mae_affected": 0.513,
+        "delay_rmse_affected": 0.76,
+        "delay_r2_in_scope": 0.9894,
+        "affected_precision": 0.9907,
+        "affected_recall": 0.9813,
+        "affected_f1": 0.986,
+        "arrival_mae_days": 0.618,
+        "risk_mae": 0.0023,
+        "mae_affected_by_stage": {
+          "tier2": 0.533,
+          "tier1": 0.435,
+          "manufacturer": 0.51,
+          "port": 0.77,
+          "distributor": 0.833
+        },
+        "nodes_evaluated": 178830,
+        "true_affected_nodes": 10711
+      }
+    },
+    "deployed_network": {
+      "seeds_only_baseline": {
+        "delay_mae_all_nodes": 0.1622,
+        "delay_mae_affected": 2.663,
+        "delay_rmse_affected": 4.2,
+        "delay_r2_in_scope": 0.6691,
+        "affected_precision": 1.0,
+        "affected_recall": 0.4654,
+        "affected_f1": 0.6352,
+        "arrival_mae_days": 0.0,
+        "risk_mae": 0.0121,
+        "mae_affected_by_stage": {
+          "tier2": 0.54,
+          "tier1": 2.869,
+          "manufacturer": 2.87,
+          "port": 8.263,
+          "distributor": 7.631
+        },
+        "nodes_evaluated": 163200,
+        "true_affected_nodes": 9941
+      },
+      "hop_decay_heuristic": {
+        "delay_mae_all_nodes": 0.4161,
+        "delay_mae_affected": 3.091,
+        "delay_rmse_affected": 4.233,
+        "delay_r2_in_scope": 0.5711,
+        "affected_precision": 0.565,
+        "affected_recall": 1.0,
+        "affected_f1": 0.7221,
+        "arrival_mae_days": 0.046,
+        "risk_mae": 0.0139,
+        "mae_affected_by_stage": {
+          "tier2": 0.54,
+          "tier1": 3.631,
+          "manufacturer": 5.758,
+          "port": 2.745,
+          "distributor": 3.112
+        },
+        "nodes_evaluated": 163200,
+        "true_affected_nodes": 9941
+      },
+      "mlp_no_graph": {
+        "delay_mae_all_nodes": 0.2032,
+        "delay_mae_affected": 2.761,
+        "delay_rmse_affected": 3.974,
+        "delay_r2_in_scope": 0.7562,
+        "affected_precision": 0.6909,
+        "affected_recall": 0.557,
+        "affected_f1": 0.6168,
+        "arrival_mae_days": 0.945,
+        "risk_mae": 0.0263,
+        "mae_affected_by_stage": {
+          "tier2": 1.068,
+          "tier1": 3.006,
+          "manufacturer": 3.045,
+          "port": 6.724,
+          "distributor": 5.486
+        },
+        "nodes_evaluated": 163200,
+        "true_affected_nodes": 9941
+      },
+      "ripple_gnn": {
+        "delay_mae_all_nodes": 0.0306,
+        "delay_mae_affected": 0.494,
+        "delay_rmse_affected": 0.714,
+        "delay_r2_in_scope": 0.9903,
+        "affected_precision": 0.9933,
+        "affected_recall": 0.9773,
+        "affected_f1": 0.9852,
+        "arrival_mae_days": 0.535,
+        "risk_mae": 0.0022,
+        "mae_affected_by_stage": {
+          "tier2": 0.544,
+          "tier1": 0.429,
+          "manufacturer": 0.466,
+          "port": 0.738,
+          "distributor": 0.863
+        },
+        "nodes_evaluated": 163200,
+        "true_affected_nodes": 9941
+      }
+    }
+  }
+}
